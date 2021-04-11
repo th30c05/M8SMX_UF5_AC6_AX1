@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>alta - BNE</title>
+    <link href="images/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    <script src="js\jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+<div id="logo">
+    <img id="img_logo_1" src="images/logo_1.png"/>
+    <img id="img_logo_2" src="images/logo_2.png"/>
+    <img id="img_logo_3" src="images/logo_3.png"/>
+    <span class="enfasi_negrtita" id="text_logo_1">B</span>
+    <span class="enfasi_negrtita" id="text_logo_2">N</span>
+    <span class="enfasi_negrtita" id="text_logo_3">E</span>
+    biblioteca<span class="enfasi_color">nacional</span>española
+</div>
+<div id="menu">
+    <a href="entrar.html">entrar</a><br/>
+    <a href="alta.html">crear cuenta</a>
+</div>
+<form action="alta.php" id="new_user" method="post" name="new_user">
+    <table class="form" id="formulario_1">
+        <tr>
+            <td>
+                <h1>No te lo pienses más, regístrate</h1>
+                <h4>una vez registrado en la gran biblioteca<span class="enfasi_color">nacional</span>española tendrás
+                    acceso a más de 1000 libros digitales y podrás solicitar la reserva de las grandes obras de la
+                    literatura española</h4>
+            </td>
+            <td class="form">
+                <span class="enfasi_negrtita">introduce los datos de tu nueva cuenta:</span>
+                <label for="username" id="label_username">nombre de usuario</label>
+                <input class="form_element" id="username" name="username" placeholder="Introduce el nombre de usuario"
+                       type="text"/>
+                <label for="email" id="label_email">email</label>
+                <input class="form_element" id="email" name="email" placeholder="Introduce el email" type="text"/>
+                <label for="password" id="label_password">contraseña</label>
+                <input class="form_element" id="password" name="password" placeholder="Introduce la contraseña"
+                       type="password"/>
+                <label for="password_r" id="label_password_r">repite la contraseña</label>
+                <input class="form_element" id="password_r" name="password_r"
+                       placeholder="Introduce la contraseña otra vez"
+                       type="password"/>
+                <div class="derecha"><input class="boton" id="siguiente" type="button" value="siguiente"/></div>
+            </td>
+        </tr>
+    </table>
+    <table class="form" id="formulario_2">
+        <tr>
+            <td class="form">
+                <span class="enfasi_negrtita">queremos saber más de ti...</span>
+                <label for="nacimiento">fecha de nacimiento</label>
+                <input class="form_element" id="nacimiento" min="1940-01-01" name="nacimiento" type="date"/>
+                <label for="telefono">teléfono</label>
+                <input class="form_element" id="telefono" name="telefono" pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}"
+                       placeholder="Introduce el teléfono" type="text"/>
+                <label for="cp">código postal</label>
+                <input class="form_element" id="cp" name="cp" pattern="[0-9]{5}"
+                       placeholder="Introduce el código postal"
+                       type="text"/>
+                <label for="email">población</label>
+                <input class="form_element" id="poblacion" name="poblacion" readonly type="text"/>
+                <div class="derecha"><input class="boton" id="anterior" type="button" value="anterior"/></div>
+            </td>
+            <td class="form">
+                <span class="enfasi_negrtita">... no nos dejes con la duda</span>
+                <label for="estudios">nivel de estudios</label>
+                <select class="form_element" id="estudios" name="estudios">
+                    <option>nivel de estudios</option>
+                    <option>licenciatura</option>
+                    <option>diplomatura</option>
+                    <option>formación profesional</option>
+                    <option>enseñanza obligatoria</option>
+                    <option>ninguno</option>
+                </select>
+                <label>¿cuantos años hace que acabaste los estudios?</label>
+                <input checked="checked" class="form_element" id="ano1" name="ano" style="width:20px;" type="radio"
+                       value="1"/><label for="ano1" style="display:inline;">menos de 5 años</label>
+                <input class="form_element" id="ano2" name="ano" style="width:20px;" type="radio" value="2"/><label
+                    for="ano2" style="display:inline;">entre 5 y 15 años</label>
+                <input class="form_element" id="ano3" name="ano" style="width:20px;" type="radio" value="3"/><label
+                    for="ano3" style="display:inline;">más de 15 años</label>
+                <label>¿cuantos días a la semana dedicas a la lectura?</label>
+                <label style="display:inline;">0</label>
+                <input class="form_element" max="7" min="0" name="lectura" step="1" style="width:85%;" type="range"
+                       value="1"/>
+                <label style="display:inline;">7</label>
+                <label for="favoritos">libros y/o autores favoritos</label>
+                <textarea class="form_element" id="favoritos" name="favoritos"></textarea>
+                <input class="form_element" id="condiciones" name="condiciones" style="width:20px;" type="checkbox"/>
+                <label for="condiciones" id="label_condiciones" style="display:inline;">Sí, estoy de acuerdo con las
+                    condiciones de uso del sitio</label>
+                <div class="derecha"><input class="boton" type="submit" value="enviar datos"/></div>
+
+            </td>
+        </tr>
+    </table>
+</form>
+<div id="footer">
+    <div>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="catalogo.html">catálogo</a></li>
+            <li><a href="servicios.html">servicios</a></li>
+            <li><a href="actividades.html">actividades</a></li>
+            <li><a href="conocenos.html">conócenos</a></li>
+            <li><a href="prensa.html">prensa</a></li>
+        </ul>
+    </div>
+    <div>
+        ©2014 BNE - Pº de Recoletos 20-22<br/>
+        28071 Madrid Tel.: (34) 91 580 78 00
+    </div>
+    <div>
+        <img alt="salamanca" class="img_m" src="images/salamanca.png"/>
+        <img alt="madrid" class="img_m" src="images/madrid.png"/><br/>
+    </div>
+</div>
+<div id="by">
+    Designed and developed by marcasru © 2016-2017 Graphic Resources SL. All rights reserved
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $("#siguiente").click(function () {
+            var go = true;
+
+            const username = document.getElementById("username")
+            if (username.value.length === 0) {
+                $("#username").focus()
+                $("#label_username").css("color", "red")
+                $("#label_username").text("debes introducir un nombre de usuario")
+                go.value = false;
+            } else {
+                $("#label_username").css("color", "#83b64f")
+                $("#label_username").text("nombre de usuario")
+                go = true;
+            }
+
+            const password = document.getElementById("password")
+            if (password.value.length < 6) {
+                $("#password").focus()
+                $("#label_password").css("color", "red")
+                $("#label_password").text("la contraseña debe tener un mínimo de 6 carácteres")
+                go = false;
+            } else {
+                $("#label_password").css("color", "#83b64f")
+                $("#label_password").text("contraseña")
+                go = true;
+            }
+
+            const password_r = document.getElementById("password_r")
+            if (password_r.value !== password.value) {
+                $("#password_r").focus()
+                $("#label_password_r").css("color", "red")
+                $("#label_password_r").text("las contraseñas no coinciden")
+                go = false;
+            } else {
+                $("#label_password_r").css("color", "#83b64f")
+                $("#label_password_r").text("repite la contraseña")
+                go = true;
+            }
+
+            if ($(go) == true) {
+                $("#formulario_1").css("opacity", "0")
+                $("#formulario_1").css("display", "none")
+                $("#formulario_2").css("opacity", "1")
+            }
+
+
+        });
+        $("#anterior").click(function () {
+            $("#formulario_2").css("opacity", "0")
+            $("#formulario_1").css("display", "block")
+            $("#formulario_1").css("opacity", "1")
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

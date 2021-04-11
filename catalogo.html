@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="ES">
+<head>
+    <meta charset="utf-8">
+    <title>catálogo - BNE</title>
+    <link href="images/favicon.png" rel="icon" type="image/x-icon"/>
+    <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    <script src="js\jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<div id="logo">
+    <img id="img_logo_1" src="images/logo_1.png"/>
+    <img id="img_logo_2" src="images/logo_2.png"/>
+    <img id="img_logo_3" src="images/logo_3.png"/>
+    <span class="enfasi_negrtita" id="text_logo_1">B</span>
+    <span class="enfasi_negrtita" id="text_logo_2">N</span>
+    <span class="enfasi_negrtita" id="text_logo_3">E</span>
+    biblioteca<span class="enfasi_color">nacional</span>española
+</div>
+<div id="mi_compra">
+    <img class="img_s" src="images/carrito.png"/>
+    <span class="enfasi_color enfasi_negrtita">Mi compra </span><span id="num_libros">0 libros</span>
+</div>
+<div id="lista_compra">
+    <table id="tabla_lista_compra">
+        <tr>
+            <td class="enfasi_negrtita">importe de la compra</td>
+            <td colspan="2" id="importe_compra">0 €</td>
+        </tr>
+    </table>
+    <span> </span>
+</div>
+<div class="seccion">
+    <h1>CATÁLOGO</h1>
+</div>
+<table class="contenido">
+    <tr>
+        <td class="libro">
+            <table>
+                <tr>
+                    <td rowspan="4">
+                        <img alt="La princesa del desierto" class="img_libro" id="portada_1"
+                             src="images/libros/libro_1.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="enfasi_negrtita" colspan="2" id="titulo_1">La princesa del desierto</td>
+                </tr>
+                <tr>
+                    <td class="precio" id="precio_1">5.95 €</td>
+                    <td>
+                        <input class="unidades" id="unidades_1" min="1" type="number" value="1"/>
+                        <img class="img_s" id="carrito_1" src="images/carrito.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:right;">
+                        <span id="texto_ver_1">ver resumen </span>
+                        <img class="img_s" id="ver_1" src="images/ver.png"/>
+                    </td>
+                </tr>
+            </table>
+            <p class="resumen" id="resumen_1">
+                Más allá de las dunas de Kheldrin, lejos de las ciudadelas del desierto, el susurro del viento se enreda
+                perezoso en las antiguas ruinas de un viejo oráculo olvidado por los dioses. Un oráculo que ha perdido
+                su voz y que tan solo aguarda la llegada de una joven extranjera para resurgir de su letargo. Y por fin,
+                tras siglos de obligado silencio, la luz parece bañar de nuevo todas sus piedras, pues la proximidad de
+                una joven de pelo claro le ha devuelto a la vida. En él se forja una nueva profecía que tan solo
+                necesita ser escuchada: una joven de sangre real que ha perdido su trono a causa de la codicia y de las
+                guerras de los hombres, iniciará el despertar de un nuevo reinado.
+            </p>
+        </td>
+        <td class="libro">
+            <table>
+                <tr>
+                    <td rowspan="4">
+                        <img alt="El club Lovecraft" class="img_libro" id="portada_2" src="images/libros/libro_2.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="enfasi_negrtita" colspan="2" id="titulo_2">El club Lovecraft</td>
+                </tr>
+                <tr>
+                    <td class="precio" id="precio_2">14.95 €</td>
+                    <td>
+                        <input class="unidades" id="unidades_2" min="1" type="number" value="1"/>
+                        <img class="img_s" id="carrito_2" src="images/carrito.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:right;">
+                        <span id="texto_ver_2">ver resumen </span>
+                        <img class="img_s" id="ver_2" src="images/ver.png"/>
+                    </td>
+                </tr>
+            </table>
+            <p class="resumen" id="resumen_2">
+                Cuenta la leyenda que el poeta árabe Abdul Alrazed que declaró haber visitado la mítica Ciudad de los
+                Pilares del desierto compuso en el siglo VIII en Damasco un libro prohibido, el Necronomicón. Para unos,
+                era un tratado de magia negra,para otros, una obra de brujería cósmica llena de conjuros, encantamientos
+                y exorcismos. El periodista Bruno Dampierre, junto con un grupo de amigos, emprenderá la búsqueda del
+                famoso texto a través de los laberintos de Toledo,donde está oculto en las profundidades de una inmensa
+                catedral subterránea sellada hace siglos debido a una extraña maldición.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="libro">
+            <table>
+                <tr>
+                    <td rowspan="4">
+                        <img alt="El umbral de la eternidad" class="img_libro" id="portada_3"
+                             src="images/libros/libro_3.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="enfasi_negrtita" colspan="2" id="titulo_3">El umbral de la eternidad</td>
+                </tr>
+                <tr>
+                    <td class="precio" id="precio_3">11.99 €</td>
+                    <td>
+                        <input class="unidades" id="unidades_3" min="1" type="number" value="1"/>
+                        <img class="img_s" id="carrito_3" src="images/carrito.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:right;">
+                        <span id="texto_ver_3">ver resumen </span>
+                        <img class="img_s" id="ver_3" src="images/ver.png"/>
+                    </td>
+                </tr>
+            </table>
+            <p class="resumen" id="resumen_3">
+                Después deLa caída de los gigantesyEl invierno del mundollega el final de la gran historia de las cinco
+                familias cuyas vidas se han entrelazado a través del siglo XX.En el año 1961 Rebecca Hoffman, profesora
+                en Alemania del Este y nieta de lady Maud, descubrirá que la policía secreta está vigilándola mientras
+                su hermano men or, Walli, sueña con huir a Occidente para convertirse en músico de rock.George Jakes,
+                joven abogado que trabaja con los hermanos Kennedy, es un activista del movimiento por los derechos
+                civiles de los negros en Estados Unidos que participará en las protestas de los estados del Sur y en la
+                marcha sobre Washington liderada por Martin Luther King.En Rusia las inclinaciones políticas enfrentan a
+                los hermanos Tania y Dimka Dvorkin. Este se convierte en una de las jóvenes promesas del Kremlin
+                mientras su hermana entrará a formar parte de un grupo activista que promueve la insurrección.Desde el
+                sur de Estados Unidos hasta la remota Siberia, desde la isla de Cuba hasta el vibrante Londres de los
+                años sesenta,El umbral de la eternidades la historia de aquellas personas que lucharon por la libertad
+                individual en medio del conflicto titánico entre los dos países más poderosos jamás conocidos.
+            </p>
+        </td>
+        <td class="libro">
+            <table>
+                <tr>
+                    <td rowspan="4">
+                        <img alt="Sueños y sombras" class="img_libro" id="portada_4" src="images/libros/libro_4.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="enfasi_negrtita" colspan="2" id="titulo_4">Sueños y sombras</td>
+                </tr>
+                <tr>
+                    <td class="precio" id="precio_4">20.00 €</td>
+                    <td>
+                        <input class="unidades" id="unidades_4" min="1" type="number" value="1"/>
+                        <img class="img_s" id="carrito_4" src="images/carrito.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:right;">
+                        <span id="texto_ver_4">ver resumen </span>
+                        <img class="img_s" id="ver_4" src="images/ver.png"/>
+                    </td>
+                </tr>
+            </table>
+            <p class="resumen" id="resumen_4">
+                Más allá de las dunas de Kheldrin, lejos de las ciudadelas del desierto, el susurro del viento se enreda
+                perezoso en las antiguas ruinas de un viejo oráculo olvidado por los dioses. Un oráculo que ha perdido
+                su voz y que tan solo aguarda la llegada de una joven extranjera para resurgir de su letargo. Y por fin,
+                tras siglos de obligado silencio, la luz parece bañar de nuevo todas sus piedras, pues la proximidad de
+                una joven de pelo claro le ha devuelto a la vida. En él se forja una nueva profecía que tan solo
+                necesita ser escuchada: una joven de sangre real que ha perdido su trono a causa de la codicia y de las
+                guerras de los hombres, iniciará el despertar de un nuevo reinado.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="libro">
+            <table>
+                <tr>
+                    <td rowspan="4">
+                        <img alt="El nombre del viento" class="img_libro" id="portada_5"
+                             src="images/libros/libro_5.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="enfasi_negrtita" colspan="2" id="titulo_5">El nombre del viento</td>
+                </tr>
+                <tr>
+                    <td class="precio" id="precio_5">9.95 €</td>
+                    <td>
+                        <input class="unidades" id="unidades_5" min="1" type="number" value="1"/>
+                        <img class="img_s" id="carrito_5" src="images/carrito.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:right;">
+                        <span id="texto_ver_5">ver resumen </span>
+                        <img class="img_s" id="ver_5" src="images/ver.png"/>
+                    </td>
+                </tr>
+            </table>
+            <p class="resumen" id="resumen_5">
+                Por primera vez Kvothe se dispone a relatar la verdad sobre sí mismo. Y para hacerlo bien, deberá
+                empezar por el principio: su infancia en una troupe de artistas itinerantes, los años malviviendo como
+                un ladronzuelo en las calles de una gran ciudad, y su llegada a una universidad donde espera aprender
+                una magia de la que s e habla en las historias Atípica, profunda y sincera, El nombre del viento es una
+                novela de aventuras, de historias dentro de otras historias, de misterio, de amistad, de amor y de
+                superación, escrita con la mano de un poeta y que ha deslumbrado por su originalidad y la maestría con
+                que está narrada a todos los que la han leído.
+            </p>
+        </td>
+        <td class="libro">
+            <table>
+                <tr>
+                    <td rowspan="4">
+                        <img alt="Sin alma" class="img_libro" id="portada_6" src="images/libros/libro_6.jpg"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="enfasi_negrtita" colspan="2" id="titulo_6">Sin alma</td>
+                </tr>
+                <tr>
+                    <td class="precio" id="precio_6">18.50 €</td>
+                    <td>
+                        <input class="unidades" id="unidades_6" min="1" type="number" value="1"/>
+                        <img class="img_s" id="carrito_6" src="images/carrito.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:right;">
+                        <span id="texto_ver_6">ver resumen </span>
+                        <img class="img_s" id="ver_6" src="images/ver.png"/>
+                    </td>
+                </tr>
+            </table>
+            <p class="resumen" id="resumen_6">
+                Alexia Tarabotti debe desenvolverse bajo muchas y variadas tribulaciones sociales. En primer lugar, no
+                tiene alma. En segundo, es una soltera cuyo padre es italiano y, además, está muerto. Y en tercer lugar,
+                ha sido groseramente atacada por un vampiro sin ningún respeto por la etiqueta social. ¿Qué puede
+                esperarse de todo e so? Aparentemente, nada bueno, pues Alexia mata accidentalmente al vampiro y el
+                atroz Lord Maccon (ruidoso, indecoroso, atractivo y hombre lobo) es enviado por la Reina para investigar
+                el caso. Con inesperados vampiros apareciendo y esperados vampiros desapareciendo, todo el mundo parece
+                estar convencido de la culpabilidad de Alexia. ¿Será capaz de averiguar lo que está sucediendo realmente
+                en la alta sociedad londinense? ¿Su habilidad para anular los poderes sobrenaturales debido a su
+                carencia de alma demostrará ser útil o simplemente embarazosa? Y, finalmente, ¿quién es el auténtico
+                enemigo, y tendrán tarta de melaza?
+            </p>
+        </td>
+    </tr>
+</table>
+<div class="derecha">
+    <a href="#mi_compra"><img alt="arrow" class="img_xs img_boton" src="images/arrow.png"/></a>
+</div>
+<div id="footer">
+    <div>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="catalogo.html">catálogo</a></li>
+            <li><a href="servicios.html">servicios</a></li>
+            <li><a href="actividades.html">actividades</a></li>
+            <li><a href="conocenos.html">conócenos</a></li>
+            <li><a href="prensa.html">prensa</a></li>
+        </ul>
+    </div>
+    <div>
+        ©2014 BNE - Pº de Recoletos 20-22<br/>
+        28071 Madrid Tel.: (34) 91 580 78 00
+    </div>
+    <div>
+        <img alt="salamanca" class="img_m" src="images/salamanca.png"/>
+        <img alt="madrid" class="img_m" src="images/madrid.png"/><br/>
+    </div>
+</div>
+<div id="by">
+    Designed and developed by marcasru © 2016-2017 Graphic Resources SL. All rights reserved
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $("#text_logo_1, #img_logo_1").animate({top: "+=200"}, 1500);
+        $("#text_logo_2, #img_logo_2").animate({top: "+=200"}, 1000);
+        $("#text_logo_3, #img_logo_3").animate({top: "+=200"}, 500);
+        $("#text_logo_1, #img_logo_1").animate({top: "-=200"}, 1500);
+        $("#text_logo_2, #img_logo_2").animate({top: "-=200"}, 1000);
+        $("#text_logo_3, #img_logo_3").animate({top: "-=200"}, 500);
+
+        $('td.libro').mouseenter(function () {
+            $(this).css("opacity", "1")
+        });
+
+        $('td.libro').mouseleave(function () {
+            $(this).css("opacity", "0.6")
+        })
+
+        function libros10(unidades) {
+            if ($('#' + unidades).val() > (10)) {
+                alert("Ha indicado que desea comprar más de 10 unidades de este libro")
+            }
+        }
+
+        const unidades_1 = document.getElementById('unidades_1');
+        const unidades_2 = document.getElementById('unidades_2');
+        const unidades_3 = document.getElementById('unidades_3');
+        const unidades_4 = document.getElementById('unidades_4');
+        const unidades_5 = document.getElementById('unidades_5');
+        const unidades_6 = document.getElementById('unidades_6');
+
+        unidades_1.addEventListener("change", (event) => {
+            libros10('unidades_1')
+        });
+        unidades_2.addEventListener("change", (event) => {
+            libros10('unidades_2')
+        });
+        unidades_3.addEventListener("change", (event) => {
+            libros10('unidades_3')
+        });
+        unidades_4.addEventListener("change", (event) => {
+            libros10('unidades_4')
+        });
+        unidades_5.addEventListener("change", (event) => {
+            libros10('unidades_5')
+        });
+        unidades_6.addEventListener("change", (event) => {
+            libros10('unidades_6')
+        });
+
+        $('.img_s').click(function () {
+            if ($(this).attr("src") === "images/ver.png") {
+                $(this).attr("src", "images/no_ver.png")
+                $("#resumen_" + ($(this).attr("id")).replace("ver_", "")).css("display", "block")
+            } else if ($(this).attr("src") === "images/no_ver.png") {
+                $(this).attr("src", "images/ver.png")
+                $("#resumen_" + ($(this).attr("id")).replace("ver_", "")).css("display", "none")
+            }
+        });
+
+        $('#mi_compra').click(function () {
+            if ($('#lista_compra').css('display') === 'none') {
+                $('#lista_compra').css("display", "block")
+            } else {
+                $('#lista_compra').css("display", "none")
+            }
+        });
+
+        $("body").on("click", " td > .img_s", function () {
+            if ($(this).attr("src") === "images/carrito.png") {
+                if (!document.getElementById($("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_"))) {
+                    $('#tabla_lista_compra').prepend('<tr class="articulo" id="' + $("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_") + '"><td>' + $('#titulo_' + $(this).attr("id").replace("carrito_", ""))[0].innerHTML + '</td><td id="unidades_' + $("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_") + '" >' + $('#precio_' + $(this).attr("id").replace("carrito_", ""))[0].innerHTML + '<br/> (x' + $('#unidades_' + $(this).attr("id").replace("carrito_", ""))[0].value + ' u.) </td> <td id="precio_' + $("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_") + '">' + (parseFloat($('#precio_' + $(this).attr("id").replace("carrito_", ""))[0].innerHTML) * parseFloat($('#unidades_' + $(this).attr("id").replace("carrito_", ""))[0].value)).toFixed(2) + ' €</td> </tr>')
+                } else if (document.getElementById($("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_"))) {
+                    $('#precio_' + $("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_"))[0].innerHTML = (parseFloat($('#precio_' + $("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_"))[0].innerHTML) + (parseFloat($('#precio_' + $(this).attr("id").replace("carrito_", ""))[0].innerHTML) * parseFloat($('#unidades_' + $(this).attr("id").replace("carrito_", ""))[0].value))).toFixed(2) + ' €'
+                    $('#unidades_' + $("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_"))[0].innerHTML = $('#precio_' + $(this).attr("id").replace("carrito_", ""))[0].innerHTML + '<br/> (x' + (parseInt(((($('#unidades_' + $("#titulo_" + $(this).attr("id").replace("carrito_", ""))[0].innerHTML.replaceAll(" ", "_")))[0].innerHTML).replace(RegExp("^.*.x"), "")).replace(RegExp("u.*.$"), "")) + parseInt($('#unidades_' + $(this).attr("id").replace("carrito_", ""))[0].value)) + ' u.)'
+                }
+
+                $('#importe_compra')[0].innerHTML = (parseFloat($('#importe_compra')[0].innerHTML) + (parseFloat($('#precio_' + $(this).attr("id").replace("carrito_", ""))[0].innerHTML) * parseFloat($('#unidades_' + $(this).attr("id").replace("carrito_", ""))[0].value))).toFixed(2) + " €";
+                $('#num_libros').text((parseInt($('#num_libros')[0].innerHTML) + parseInt($('#unidades_' + $(this).attr("id").replace("carrito_", ""))[0].value) + " libros"))
+            }
+        });
+
+        $("#tabla_lista_compra").on("dblclick", "tr", function () {
+            if ($(this).attr("class") === "articulo") {
+                let toremove = $(this)[0].innerHTML
+
+                toremove = toremove.replace(RegExp('^.*.x'), "")
+                toremove = toremove.replace(RegExp('u.*.$'), "")
+                $('#num_libros').text((parseInt($('#num_libros')[0].innerHTML) - parseInt(toremove) + " libros"))
+
+                toremove = $(this)[0].innerHTML
+                toremove = toremove.replace(RegExp("€</td>.$"), "")
+                toremove = toremove.replace(RegExp("^.*.>"), "")
+                $('#importe_compra')[0].innerHTML = (parseFloat($('#importe_compra')[0].innerHTML) - parseFloat(toremove)).toFixed(2) + " €";
+
+                $(this).remove()
+            }
+
+            
+        })
+
+    });
+</script>
+
+</body>
+</html>
