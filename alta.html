@@ -129,17 +129,27 @@
 
         $("#siguiente").click(function () {
             var go = true;
-
             const username = document.getElementById("username")
             if (username.value.length === 0) {
                 $("#username").focus()
                 $("#label_username").css("color", "red")
                 $("#label_username").text("debes introducir un nombre de usuario")
-                go.value = false;
+                go = false;
             } else {
                 $("#label_username").css("color", "#83b64f")
                 $("#label_username").text("nombre de usuario")
-                go = true;
+            }
+
+            const filtro = /^[0-9a-zA-Z.]+[@][0-9a-zA-Z.]+[.][0-9a-zA-Z]+$/
+            const email = document.getElementById("email")
+            if (email.value.match(filtro)) {
+                $("#label_email").css("color", "#83b64f")
+                $("#label_email").text("email")
+            } else {
+                $("#email").focus()
+                $("#label_email").css("color", "red")
+                $("#label_email").text("debes introducir un email v�lido")
+                go = false;
             }
 
             const password = document.getElementById("password")
@@ -151,7 +161,6 @@
             } else {
                 $("#label_password").css("color", "#83b64f")
                 $("#label_password").text("contraseña")
-                go = true;
             }
 
             const password_r = document.getElementById("password_r")
@@ -163,10 +172,9 @@
             } else {
                 $("#label_password_r").css("color", "#83b64f")
                 $("#label_password_r").text("repite la contraseña")
-                go = true;
             }
 
-            if ($(go) == true) {
+            if (go == true) {
                 $("#formulario_1").css("opacity", "0")
                 $("#formulario_1").css("display", "none")
                 $("#formulario_2").css("opacity", "1")
