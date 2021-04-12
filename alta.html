@@ -5,7 +5,7 @@
     <title>alta - BNE</title>
     <link href="images/favicon.png" rel="icon" type="image/x-icon"/>
     <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
-    <script src="js\jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -127,68 +127,67 @@
 <script>
     $(document).ready(function () {
 
-        $("#siguiente").click(function () {
-            var go = true;
+        $('#siguiente').click(function () {
+
+            let go = true;
             const username = document.getElementById("username")
             if (username.value.length === 0) {
-                $("#username").focus()
-                $("#label_username").css("color", "red")
-                $("#label_username").text("debes introducir un nombre de usuario")
+                $('#username').focus()
+                $('#label_username').css("color", "red")
+                $('#label_username').text("debes introducir un nombre de usuario")
                 go = false;
             } else {
-                $("#label_username").css("color", "#83b64f")
-                $("#label_username").text("nombre de usuario")
+                $('#label_username').css("color", "#83b64f")
+                $('#label_username').text("nombre de usuario")
             }
 
             const filtro = /^[0-9a-zA-Z.]+[@][0-9a-zA-Z.]+[.][0-9a-zA-Z]+$/
             const email = document.getElementById("email")
             if (email.value.match(filtro)) {
-                $("#label_email").css("color", "#83b64f")
-                $("#label_email").text("email")
+                $('#label_email').css("color", "#83b64f")
+                $('#label_email').text("email")
             } else {
-                $("#email").focus()
-                $("#label_email").css("color", "red")
-                $("#label_email").text("debes introducir un email v�lido")
+                $('#email').focus()
+                $('#label_email').css("color", "red")
+                $('#label_email').text("debes introducir un email válido")
                 go = false;
             }
 
             const password = document.getElementById("password")
             if (password.value.length < 6) {
-                $("#password").focus()
-                $("#label_password").css("color", "red")
-                $("#label_password").text("la contraseña debe tener un mínimo de 6 carácteres")
+                $('#password').focus()
+                $('#label_password').css("color", "red")
+                $('#label_password').text("la contraseña debe tener un mínimo de 6 carácteres")
                 go = false;
             } else {
-                $("#label_password").css("color", "#83b64f")
-                $("#label_password").text("contraseña")
+                $('#label_password').css("color", "#83b64f")
+                $('#label_password').text("contraseña")
             }
 
             const password_r = document.getElementById("password_r")
             if (password_r.value !== password.value) {
-                $("#password_r").focus()
-                $("#label_password_r").css("color", "red")
-                $("#label_password_r").text("las contraseñas no coinciden")
+                $('#password_r').focus()
+                $('#label_password_r').css("color", "red")
+                $('#label_password_r').text("las contraseñas no coinciden")
                 go = false;
             } else {
-                $("#label_password_r").css("color", "#83b64f")
-                $("#label_password_r").text("repite la contraseña")
+                $('#label_password_r').css("color", "#83b64f")
+                $('#label_password_r').text("repite la contraseña")
             }
 
-            if (go == true) {
-                $("#formulario_1").css("opacity", "0")
-                $("#formulario_1").css("display", "none")
-                $("#formulario_2").css("opacity", "1")
+            if (go === true) {
+                $('#formulario_1').css("opacity", "0")
+                $('#formulario_1').css("display", "none")
+                $('#formulario_2').css("opacity", "1")
             }
 
+        });
+        $('#anterior').click(function () {
+            $('#formulario_2').css("opacity", "0")
+            $('#formulario_1').css("display", "block")
+            $('#formulario_1').css("opacity", "1")
 
         });
-        $("#anterior").click(function () {
-            $("#formulario_2").css("opacity", "0")
-            $("#formulario_1").css("display", "block")
-            $("#formulario_1").css("opacity", "1")
-
-        });
-
     });
 </script>
 
