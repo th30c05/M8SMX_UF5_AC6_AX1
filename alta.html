@@ -94,7 +94,7 @@
                 <input class="form_element" id="condiciones" name="condiciones" style="width:20px;" type="checkbox"/>
                 <label for="condiciones" id="label_condiciones" style="display:inline;">Sí, estoy de acuerdo con las
                     condiciones de uso del sitio</label>
-                <div class="derecha"><input class="boton" type="submit" value="enviar datos"/></div>
+                <div class="derecha"><input id="submit" class="boton" type="submit" value="enviar datos"/></div>
 
             </td>
         </tr>
@@ -188,7 +188,20 @@
             $('#formulario_1').css("opacity", "1")
 
         });
-    });
+
+        $("#new_user").on('submit', function(){
+            if (!$('#condiciones').prop('checked')) {
+                event.preventDefault();
+                event.stopPropagation();
+                $('#label_condiciones').text("Debes aceptar las condiciones")
+                $('#label_condiciones').css("color", "red")
+
+
+            }
+
+        })
+
+        });
 </script>
 
 </body>
